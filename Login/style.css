@@ -1,0 +1,270 @@
+.log-in {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.log-in .div {
+  background-color: #ffffff;
+  width: 1366px;
+  height: 769px;
+  position: relative;
+}
+
+.log-in .overlap {
+  position: absolute;
+  width: 516px;
+  height: 52px;
+  top: 537px;
+  left: 147px;
+}
+
+.log-in .frame {
+  position: absolute;
+  width: 459px;
+  height: 14px;
+  top: 38px;
+  left: 0;
+}
+
+.log-in .overlap-group {
+  position: relative;
+  width: 400px;
+  height: 14px;
+}
+
+.log-in .line {
+  position: absolute;
+  width: 400px;
+  height: 2px;
+  top: 7px;
+  left: 0;
+}
+
+.log-in .div-wrapper {
+  display: flex;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 3px;
+  position: absolute;
+  top: 0;
+  left: 191px;
+  background-color: #ffffff;
+}
+
+.log-in .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 9px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .rectangle {
+  width: 504px;
+  height: 51px;
+  left: 12px;
+  border-radius: 20px;
+  border-color: transparent;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 69, 125, 1) 0%,
+    rgba(0, 69, 125, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  border: 2px solid;
+}
+
+.log-in .text-wrapper-2 {
+  position: absolute;
+  width: 114px;
+  top: 12px;
+  left: 207px;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .pontianak-atau {
+  position: absolute;
+  width: 551px;
+  height: 769px;
+  top: 0;
+  left: 815px;
+}
+
+.log-in .don-t-have-an {
+  position: absolute;
+  width: 494px;
+  top: 604px;
+  left: 158px;
+  font-family: "Lexend Deca-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .span {
+  color: #2a2a2a;
+}
+
+.log-in .text-wrapper-3 {
+  color: #008ce4;
+}
+
+.log-in .text-wrapper-4 {
+  position: absolute;
+  width: 281px;
+  top: 479px;
+  left: 474px;
+  font-family: "Lexend Deca-Regular", Helvetica;
+  font-weight: 400;
+  color: #008ce4;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .overlap-2 {
+  position: absolute;
+  width: 570px;
+  height: 59px;
+  top: 303px;
+  left: 113px;
+}
+
+.log-in .text-wrapper-5 {
+  position: absolute;
+  width: 227px;
+  top: 17px;
+  left: 0;
+  font-family: "Lexend Deca-Regular", Helvetica;
+  font-weight: 400;
+  color: #2a2a2a99;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.log-in .rectangle-2 {
+  width: 556px;
+  height: 59px;
+  left: 14px;
+  border-radius: 13px;
+  border-color: #464545;
+  position: absolute;
+  top: 0;
+  border: 2px solid;
+}
+
+.log-in .overlap-3 {
+  position: absolute;
+  width: 570px;
+  height: 57px;
+  top: 413px;
+  left: 113px;
+}
+
+.log-in .text-wrapper-6 {
+  position: absolute;
+  width: 128px;
+  top: 20px;
+  left: 0;
+  font-family: "Lexend Deca-Regular", Helvetica;
+  font-weight: 400;
+  color: #2a2a2a99;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .rectangle-3 {
+  width: 556px;
+  height: 57px;
+  left: 14px;
+  border-radius: 13px;
+  border-color: #464545;
+  position: absolute;
+  top: 0;
+  border: 2px solid;
+}
+
+.log-in .mata {
+  position: absolute;
+  width: 43px;
+  height: 57px;
+  top: 0;
+  left: 520px;
+  object-fit: cover;
+}
+
+.log-in .text-wrapper-7 {
+  position: absolute;
+  width: 238px;
+  top: 272px;
+  left: 109px;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-weight: 700;
+  color: #2a2a2a;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .text-wrapper-8 {
+  position: absolute;
+  width: 166px;
+  top: 384px;
+  left: 97px;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-weight: 700;
+  color: #2a2a2a;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.log-in .text-wrapper-9 {
+  position: absolute;
+  width: 552px;
+  top: 175px;
+  left: 102px;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-weight: 700;
+  color: #2b2a2a;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: -1.92px;
+  line-height: normal;
+}
+
+.log-in .chatgpt-image-jul {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  top: 11px;
+  left: 16px;
+  object-fit: cover;
+}
