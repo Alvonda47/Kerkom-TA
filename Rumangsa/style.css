@@ -50,7 +50,7 @@
   position: absolute;
   top: 113px;
   left: 609px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -62,7 +62,7 @@
   position: absolute;
   top: 113px;
   left: 709px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -74,7 +74,7 @@
   position: absolute;
   top: 113px;
   left: 804px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -86,7 +86,7 @@
   position: absolute;
   top: 113px;
   left: 920px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -127,7 +127,7 @@
   top: 8px;
   left: 24px;
   position: absolute;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -159,7 +159,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -171,7 +171,7 @@
 .rumangsa .text-wrapper-7 {
   top: 83px;
   left: 181px;
-  font-family: "Clicker Script-Regular", Helvetica;
+  font-family: "Clicker Script", Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 64px;
@@ -207,7 +207,7 @@
   width: 87px;
   top: 13px;
   left: 19px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 16px;
@@ -285,7 +285,7 @@
   width: 980px;
   top: 88px;
   left: 0;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
@@ -299,7 +299,7 @@
   width: 664px;
   top: 507px;
   left: 158px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -313,7 +313,7 @@
   width: 111px;
   top: 728px;
   left: 434px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -328,7 +328,7 @@
   width: 664px;
   top: 598px;
   left: 158px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #000000;
   font-size: 20px;
@@ -341,7 +341,7 @@
   position: absolute;
   top: 0;
   left: 92px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 54px;
@@ -395,7 +395,7 @@
   position: absolute;
   top: 19px;
   left: 24px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 22px;
@@ -407,7 +407,7 @@
   position: absolute;
   top: 16px;
   left: 26px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #00000057;
   font-size: 20px;
@@ -447,7 +447,7 @@
   width: 612px;
   top: 73px;
   left: 2px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #707070;
   font-size: 20px;
@@ -459,7 +459,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #2a4d6c;
   font-size: 54px;
@@ -504,7 +504,7 @@
   width: 980px;
   top: 0;
   left: 100px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -567,7 +567,7 @@
   left: 25px;
   color: #ffffff;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0;
@@ -586,7 +586,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 22px;
@@ -598,7 +598,7 @@
   top: 38px;
   left: 21px;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 18px;
@@ -643,7 +643,7 @@
   left: 24px;
   color: #ffffff;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0;
@@ -662,7 +662,7 @@
   top: 37px;
   left: 23px;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 18px;
@@ -701,7 +701,7 @@
   top: 38px;
   left: 13px;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 18px;
@@ -757,7 +757,7 @@
   position: absolute;
   top: 338px;
   left: 70px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 22px;
@@ -769,7 +769,7 @@
   top: 376px;
   left: 96px;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 18px;
@@ -781,7 +781,7 @@
   position: absolute;
   top: 0;
   left: 391px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #2a4d6c;
   font-size: 54px;
@@ -794,7 +794,7 @@
   left: 699px;
   color: #ffffff;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0;
@@ -806,7 +806,7 @@
   left: 996px;
   color: #ffffff;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0;
@@ -858,7 +858,7 @@
   width: 980px;
   top: 470px;
   left: 100px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: transparent;
   font-size: 20px;
@@ -872,7 +872,7 @@
 }
 
 .rumangsa .text-wrapper-25 {
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #092d60;
   font-size: 30px;
@@ -891,7 +891,7 @@
   width: 980px;
   top: 88px;
   left: 0;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -904,7 +904,7 @@
   position: absolute;
   top: 0;
   left: 221px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #2a4d6c;
   font-size: 54px;
@@ -941,7 +941,7 @@
   position: absolute;
   top: 113px;
   left: 0;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 28px;
@@ -953,7 +953,7 @@
   position: absolute;
   top: 158px;
   left: 13px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -994,7 +994,7 @@
   position: absolute;
   top: 158px;
   left: 16px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -1035,7 +1035,7 @@
   position: absolute;
   top: 158px;
   left: 3px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -1076,7 +1076,7 @@
   position: absolute;
   top: 158px;
   left: 10px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #707070;
   font-size: 20px;
@@ -1138,7 +1138,7 @@
   position: absolute;
   top: 157px;
   left: 4px;
-  font-family: "Playfair Display-Regular", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
@@ -1150,7 +1150,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 54px;
@@ -1180,7 +1180,7 @@
   left: 26px;
   color: #1e1e1e;
   position: absolute;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0;
@@ -1240,7 +1240,7 @@
 .rumangsa .text-wrapper-31 {
   top: 372px;
   left: 311px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 32px;
@@ -1253,7 +1253,7 @@
   position: absolute;
   top: 33px;
   left: 57px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 220px;
@@ -1266,7 +1266,7 @@
   position: absolute;
   top: 439px;
   left: 499px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: #707070;
   font-size: 20px;
@@ -1318,7 +1318,7 @@
   position: absolute;
   top: 0;
   left: 108px;
-  font-family: "Playfair Display-Bold", Helvetica;
+  font-family: "Playfair Display-Bold", serif;
   font-weight: 700;
   color: var(--coffee);
   font-size: 54px;
