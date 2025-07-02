@@ -50,7 +50,7 @@
   position: absolute;
   top: 113px;
   left: 609px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -62,7 +62,7 @@
   position: absolute;
   top: 113px;
   left: 709px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -74,7 +74,7 @@
   position: absolute;
   top: 113px;
   left: 804px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -86,7 +86,7 @@
   position: absolute;
   top: 113px;
   left: 920px;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -159,7 +159,7 @@
   top: 0;
   left: 0;
   position: absolute;
-  font-family: "Playfair Display-Medium", Helvetica;
+  font-family: "Playfair Display", serif;
   font-weight: 500;
   color: #ffffff;
   font-size: 20px;
@@ -171,7 +171,7 @@
 .rumangsa .text-wrapper-7 {
   top: 83px;
   left: 181px;
-  font-family: "Clicker Script-Regular", Helvetica;
+  font-family: "Clicker Script", Helvetica, sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 64px;
