@@ -63,7 +63,7 @@ body {
 .text-wrapper-9 {
   position: absolute;
   top: 175px;
-  left: 102px;
+  left: 150px;
   font-size: 64px;
   font-weight: 700;
   color: #2b2a2a;
@@ -72,7 +72,7 @@ body {
 .text-wrapper-7 {
   position: absolute;
   top: 272px;
-  left: 109px;
+  left: 150px;
   font-weight: 700;
   font-size: 15px;
   color: #2a2a2a;
@@ -96,8 +96,8 @@ body {
 
 .text-wrapper-5 {
   position: absolute;
-  top: 17px;
-  left: 0;
+  top: 20px;
+  left: 30px;
   font-size: 16px;
   color: #2a2a2a99;
   text-decoration: underline;
@@ -106,7 +106,7 @@ body {
 .text-wrapper-8 {
   position: absolute;
   top: 384px;
-  left: 97px;
+  left: 150px;
   font-weight: 700;
   font-size: 15px;
   color: #2a2a2a;
@@ -130,8 +130,8 @@ body {
 
 .text-wrapper-6 {
   position: absolute;
-  top: 20px;
-  left: 0;
+  top: 22px;
+  left: 30px;
   font-size: 16px;
   color: #2a2a2a99;
 }
@@ -147,8 +147,8 @@ body {
 
 .text-wrapper-4 {
   position: absolute;
-  top: 479px;
-  left: 474px;
+  top: 490px;
+  left: 550px;
   font-size: 15px;
   color: #008ce4;
   text-align: right;
@@ -165,7 +165,7 @@ body {
 .rectangle {
   position: absolute;
   top: 0;
-  left: 12px;
+  left: 1px;
   width: 504px;
   height: 51px;
   border-radius: 20px;
@@ -176,7 +176,7 @@ body {
 .text-wrapper-2 {
   position: absolute;
   top: 12px;
-  left: 207px;
+  left: 230px;
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
@@ -224,7 +224,7 @@ body {
 .don-t-have-an {
   position: absolute;
   top: 604px;
-  left: 158px;
+  left: 300px;
   font-size: 15px;
   color: #2a2a2a;
 }
