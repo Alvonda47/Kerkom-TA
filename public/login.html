@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --text-color: #111827;
+            --light-text: #6B7280;
+            --border-color: #E5E7EB;
+            --google-btn-border: #D1D5DB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #F9FAFB;
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 0 16px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        .form-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .image-section {
+            flex: 1;
+            background-color: #F3F4F6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            background-image: url('img/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .welcome-subtitle {
+            font-size: 16px;
+            color: var(--light-text);
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+
+        input::placeholder {
+            color: var(--light-text);
+        }
+
+        .password-group {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--light-text);
+            font-size: 18px;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: 8px;
+        }
+
+        .forgot-password a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 24px 0;
+            color: var(--light-text);
+            font-size: 14px;
+        }
+
+        .logo-img {
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .divider::before {
+            margin-right: 16px;
+        }
+
+        .divider::after {
+            margin-left: 16px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #4338CA;
+        }
+
+        .btn-google {
+            background-color: white;
+            color: var(--text-color);
+            border: 1px solid var(--google-btn-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-google:hover {
+            background-color: #F9FAFB;
+        }
+
+        .btn-google img {
+            width: 18px;
+            height: 18px;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--light-text);
+        }
+
+        .signup-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .success-message {
+            color: #10B981;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .error-message {
+            color: #EF4444;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+        @media (max-width: 1024px) {
+            .image-section {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                position: static;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (orientation: landscape) and (max-width: 1024px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .image-section {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <div class="form-container">
+                <div class="logo">
+                    <img src="img/rumangsa.png" alt="Logo" class="logo-img">
+                </div>
+
+                <h1>Welcome Back!</h1>
+                <p class="welcome-subtitle">Please sign in to your account</p>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Username atau Email</label>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-group">
+                            <input type="password" id="password" placeholder="**********" required>
+                            <span class="password-toggle" onclick="togglePassword()">👁️</span>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#" onclick="showForgotPassword()">Forgot password?</a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Login</button>
+
+                    <div class="success-message" id="successMessage"></div>
+                    <div class="error-message" id="errorMessage"></div>
+
+                    <div class="divider">Or</div>
+
+                    <button type="button" class="btn btn-google">
+                        <img src="https://www.google.com/favicon.ico" alt="Google">
+                        <span>Masuk dengan Google</span>
+                    </button>
+
+                    <div class="signup-link">
+                        Don't have an account? <a href="/signup">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="image-section"></div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleBtn = document.querySelector('.password-toggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleBtn.textContent = '🙈';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.textContent = '👁️';
+            }
+        }
+
+        function showForgotPassword() {
+            alert('Forgot password functionality will be implemented soon!');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('loginForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Reset messages
+                successMessage.style.display = 'none';
+                errorMessage.style.display = 'none';
+
+                // Basic validation
+                if (!email || !password) {
+                    errorMessage.textContent = 'Please fill in all fields.';
+                    errorMessage.style.display = 'block';
+                    return;
+                }
+
+                // Show loading state
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Logging in...';
+                form.classList.add('loading');
+
+                // Send login request to server
+                fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        email: email, 
+                        password: password 
+                    }),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        successMessage.textContent = 'Login successful! Redirecting...';
+                        successMessage.style.display = 'block';
+                        
+                        // Redirect to dashboard or home page after successful login
+                        setTimeout(() => {
+                            // Replace with your actual dashboard/home page URL
+                            window.location.href = '/dashboard';
+                        }, 1500);
+                    } else {
+                        errorMessage.textContent = data.message || 'Login failed. Please check your credentials.';
+                        errorMessage.style.display = 'block';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    errorMessage.textContent = 'An error occurred. Please try again.';
+                    errorMessage.style.display = 'block';
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Login';
+                    form.classList.remove('loading');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
