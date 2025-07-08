@@ -1,0 +1,76 @@
+.fotgot-password {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.fotgot-password .content {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fotgot-password .chatgpt-image-jul {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  margin-bottom: 0px;
+}
+
+.fotgot-password .text-wrapper {
+  font-family: "Inria Serif-Regular", Helvetica;
+  font-size: 28px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.fotgot-password .password {
+  font-family: "Inria Sans-Bold", Helvetica;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.reset-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rectangle {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border: 2px solid #464545;
+  border-radius: 13px;
+  font-family: "Lexend Deca-Regular", Helvetica;
+  font-size: 16px;
+}
+
+.rectangle-2 {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(270deg, rgba(0, 69, 125, 1), rgba(0, 69, 125, 1));
+  color: white;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-wrapper-3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}

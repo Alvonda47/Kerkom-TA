@@ -1,0 +1,51 @@
+.screen {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen .div {
+  background-color: #ffffff;
+  width: 1366px;
+  height: 664px;
+  position: relative;
+}
+
+.screen .chatgpt-image-jul {
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.screen .text-wrapper {
+  position: absolute;
+  width: 696px;
+  top: 185px;
+  left: 335px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.screen .text-wrapper-2 {
+  position: absolute;
+  width: 271px;
+  top: 375px;
+  left: 547px;
+  font-family: "Lexend Deca-Bold", Helvetica;
+  font-weight: 700;
+  color: #3170c7;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
