@@ -52,10 +52,11 @@
   left: 609px;
   font-family: "Playfair Display", serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #4e4e4e;
   font-size: 20px;
   letter-spacing: 0;
   line-height: normal;
+  color: #ffffff;
 }
 
 .rumangsa .text-wrapper-2 {
@@ -111,65 +112,77 @@
   border-radius: 24px;
 }
 
-.rumangsa .rectangle {
+.text-wrapper-5 {
   position: absolute;
-  width: 116px;
-  height: 48px;
-  top: 0;
-  left: 0;
-  background-color: #ffb231;
-  border-radius: 24px;
-  box-shadow: 0px 6px 12px #f9c06a38;
-}
-
-.rumangsa .text-wrapper-5 {
-  width: 74px;
-  top: 8px;
+  top: 13px;
   left: 24px;
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
+  font-family: "Playfair Display-Bold", serif;
+  font-weight: 700;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
-  text-decoration: underline;
+}
+.text-wrapper-6 {
+  position: absolute;
+  top: 22px;
+  left: 24px;
+  font-family: "Playfair Display-Bold", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+
+  /* Tambahan penting */
+  white-space: nowrap; /* Jangan pindah baris */
+  display: inline-block; /* Hindari block level */
 }
 
-.rumangsa .rectangle-2 {
-  position: absolute;
+.text-wrapper-8 {
+  background-color: #f9c06a;
+  color: black;
+  border: none;
+  padding: 10px 24px;
   width: 116px;
-  height: 48px;
-  top: 0;
-  left: 134px;
-  background-color: #ffb231;
-  border-radius: 24px;
-  box-shadow: 0px 6px 12px #f9c06a38;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.text-wrapper-5:hover,
+.text-wrapper-6:hover,
+.text-wrapper-8:hover {
+  background-color: #e5a73f;
+  transform: scale(1.05);
 }
 
 .rumangsa .div-wrapper {
   position: absolute;
   width: 72px;
-  height: 27px;
-  top: 114px;
-  left: 1280px;
+  height: 100px;
+  top: 100px;
+  left: 1270px;
 }
 
-.rumangsa .text-wrapper-6 {
-  top: 0;
-  left: 0;
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
+button {
+  all: unset;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .rumangsa .text-wrapper-7 {
-  top: 83px;
+  top: 85px;
   left: 181px;
   font-family: "Clicker Script", Helvetica, sans-serif;
   font-weight: 400;
@@ -200,19 +213,6 @@
   background-color: #092d60;
   border-radius: 24px;
   box-shadow: 0px 6px 12px #f9c06a38;
-}
-
-.rumangsa .text-wrapper-8 {
-  position: absolute;
-  width: 87px;
-  top: 13px;
-  left: 19px;
-  font-family: "Playfair Display-Bold", serif;
-  font-weight: 700;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
 }
 
 .rumangsa .img {
