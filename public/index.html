@@ -1,407 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Started - Sign Up</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        :root {
-            --primary-color: #4F46E5;
-            --text-color: #111827;
-            --light-text: #6B7280;
-            --border-color: #E5E7EB;
-            --google-btn-border: #D1D5DB;
-        }
+      :root {
+        --primary-color: #4f46e5;
+        --text-color: #111827;
+        --light-text: #6b7280;
+        --border-color: #e5e7eb;
+        --google-btn-border: #d1d5db;
+      }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
 
-        body {
-            background-color: #F9FAFB;
-            color: var(--text-color);
-            min-height: 100vh;
-            display: flex;
-            max-width: 100vw;
-            overflow-x: hidden;
-        }
+      body {
+        background-color: #f9fafb;
+        color: var(--text-color);
+        min-height: 100vh;
+        display: flex;
+        max-width: 100vw;
+        overflow-x: hidden;
+      }
 
-        .form-container {
-            width: 100%;
-            max-width: 400px;
-            padding: 0 16px;
-        }
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 0 16px;
+      }
 
+      .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: var(--primary-color);
+      }
+
+      .container {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      .form-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .image-section {
+        flex: 1;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        background-image: url("signup.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 32px;
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+
+      input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+      }
+
+      input::placeholder {
+        color: var(--light-text);
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        margin: 24px 0;
+        color: var(--light-text);
+        font-size: 14px;
+      }
+
+      .logo-img {
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .divider::before {
+        margin-right: 16px;
+      }
+
+      .divider::after {
+        margin-left: 16px;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #4338ca;
+      }
+
+      .btn-google {
+        background-color: white;
+        color: var(--text-color);
+        border: 1px solid var(--google-btn-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .btn-google:hover {
+        background-color: #f9fafb;
+      }
+
+      .btn-google img {
+        width: 18px;
+        height: 18px;
+      }
+
+      .password-feedback {
+        font-size: 12px;
+        margin-top: 4px;
+        display: none;
+      }
+
+      .match {
+        color: #10b981;
+      }
+
+      .mismatch {
+        color: #ef4444;
+      }
+
+      .loading {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+      .success-message {
+        color: #10b981;
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+      }
+
+      .error-message {
+        color: #ef4444;
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+      }
+
+      .login-link {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: var(--light-text);
+      }
+
+      .login-link a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 1024px) {
+        .image-section {
+          display: none;
+        }
+      }
+
+      @media (max-width: 768px) {
         .logo {
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            font-weight: 600;
-            font-size: 20px;
-            color: var(--primary-color);
+          position: static;
+          text-align: center;
+          margin-bottom: 20px;
         }
+      }
 
+      @media (orientation: landscape) and (max-width: 1024px) {
         .container {
-            display: flex;
-            width: 100%;
-            min-height: 100vh;
-        }
-
-        .form-section {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-        }
-
-        .form-container {
-            width: 100%;
-            max-width: 400px;
+          flex-direction: row;
         }
 
         .image-section {
-            flex: 1;
-            background-color: #F3F4F6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 40px;
-            background-image: url('signup.jpg');
-            background-size: cover;
-            background-position: center;
+          display: flex;
         }
-
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 32px;
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-
-        input {
-            width: 100%;
-            padding: 12px 16px;
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            font-size: 14px;
-            transition: all 0.2s;
-        }
-
-        input:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-        }
-
-        input::placeholder {
-            color: var(--light-text);
-        }
-
-        .divider {
-            display: flex;
-            align-items: center;
-            margin: 24px 0;
-            color: var(--light-text);
-            font-size: 14px;
-        }
-
-        .logo-img {
-            height: 100px;
-            object-fit: contain;
-        }
-
-        .divider::before, .divider::after {
-            content: "";
-            flex: 1;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .divider::before {
-            margin-right: 16px;
-        }
-
-        .divider::after {
-            margin-left: 16px;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: 500;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .btn-primary {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #4338CA;
-        }
-
-        .btn-google {
-            background-color: white;
-            color: var(--text-color);
-            border: 1px solid var(--google-btn-border);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .btn-google:hover {
-            background-color: #F9FAFB;
-        }
-
-        .btn-google img {
-            width: 18px;
-            height: 18px;
-        }
-
-        .password-feedback {
-            font-size: 12px;
-            margin-top: 4px;
-            display: none;
-        }
-
-        .match {
-            color: #10B981;
-        }
-
-        .mismatch {
-            color: #EF4444;
-        }
-
-        .loading {
-            opacity: 0.6;
-            pointer-events: none;
-        }
-
-        .success-message {
-            color: #10B981;
-            text-align: center;
-            margin-top: 10px;
-            display: none;
-        }
-
-        .error-message {
-            color: #EF4444;
-            text-align: center;
-            margin-top: 10px;
-            display: none;
-        }
-
-        .login-link {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: var(--light-text);
-        }
-
-        .login-link a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .login-link a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 1024px) {
-            .image-section {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .logo {
-                position: static;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (orientation: landscape) and (max-width: 1024px) {
-            .container {
-                flex-direction: row;
-            }
-
-            .image-section {
-                display: flex;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-  <div class="container">
-    <div class="form-section">
-      <div class="form-container">
-        <div class="logo">
-          <img src="logo.png" alt="Logo" class="logo-img">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-section">
+        <div class="form-container">
+          <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img" />
+          </div>
+
+          <h1>Get Started</h1>
+
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+                minlength="6"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm your password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Enter your password"
+                required
+              />
+              <div id="passwordMatch" class="password-feedback match">
+                Passwords match!
+              </div>
+              <div id="passwordMismatch" class="password-feedback mismatch">
+                Passwords do not match
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Sign Up
+            </button>
+
+            <div class="success-message" id="successMessage"></div>
+            <div class="error-message" id="errorMessage"></div>
+
+            <div class="divider">Or</div>
+
+            <button type="button" class="btn btn-google">
+              <img src="https://www.google.com/favicon.ico" alt="Google" />
+              <span>Masuk dengan Google</span>
+            </button>
+
+            <div class="login-link">
+              Already have an account? <a href="login.html">Login</a>
+            </div>
+          </form>
         </div>
-
-        <h1>Get Started</h1>
-
-        <form id="signupForm">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter your password" required minlength="6">
-          </div>
-
-          <div class="form-group">
-            <label for="confirmPassword">Confirm your password</label>
-            <input type="password" id="confirmPassword" placeholder="Enter your password" required>
-            <div id="passwordMatch" class="password-feedback match">Passwords match!</div>
-            <div id="passwordMismatch" class="password-feedback mismatch">Passwords do not match</div>
-          </div>
-
-          <button type="submit" class="btn btn-primary" id="submitBtn">Sign Up</button>
-
-          <div class="success-message" id="successMessage"></div>
-          <div class="error-message" id="errorMessage"></div>
-
-          <div class="divider">Or</div>
-
-          <button type="button" class="btn btn-google">
-            <img src="https://www.google.com/favicon.ico" alt="Google">
-            <span>Masuk dengan Google</span>
-          </button>
-
-          <div class="login-link">
-            Already have an account? <a href="/login">Login</a>
-          </div>
-        </form>
       </div>
+
+      <div class="image-section"></div>
     </div>
 
-    <div class="image-section"></div>
-  </div>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.getElementById('signupForm');
-            const password = document.getElementById('password');
-            const confirmPassword = document.getElementById('confirmPassword');
-            const passwordMatch = document.getElementById('passwordMatch');
-            const passwordMismatch = document.getElementById('passwordMismatch');
-            const submitBtn = document.getElementById('submitBtn');
-            const successMessage = document.getElementById('successMessage');
-            const errorMessage = document.getElementById('errorMessage');
-            
-            // Real-time password validation
-            confirmPassword.addEventListener('input', function() {
-                if (password.value && confirmPassword.value) {
-                    if (password.value === confirmPassword.value) {
-                        confirmPassword.style.borderColor = '#10B981';
-                        passwordMatch.style.display = 'block';
-                        passwordMismatch.style.display = 'none';
-                    } else {
-                        confirmPassword.style.borderColor = '#EF4444';
-                        passwordMatch.style.display = 'none';
-                        passwordMismatch.style.display = 'block';
-                    }
-                } else {
-                    confirmPassword.style.borderColor = 'var(--border-color)';
-                    passwordMatch.style.display = 'none';
-                    passwordMismatch.style.display = 'none';
-                }
-            });
-            
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const email = document.getElementById('email').value;
-                const passwordVal = password.value;
-                const confirmPasswordVal = confirmPassword.value;
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("signupForm");
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+        const passwordMatch = document.getElementById("passwordMatch");
+        const passwordMismatch = document.getElementById("passwordMismatch");
+        const submitBtn = document.getElementById("submitBtn");
+        const successMessage = document.getElementById("successMessage");
+        const errorMessage = document.getElementById("errorMessage");
 
-                // Reset messages
-                successMessage.style.display = 'none';
-                errorMessage.style.display = 'none';
+        // Real-time password validation
+        confirmPassword.addEventListener("input", function () {
+          if (password.value && confirmPassword.value) {
+            if (password.value === confirmPassword.value) {
+              confirmPassword.style.borderColor = "#10B981";
+              passwordMatch.style.display = "block";
+              passwordMismatch.style.display = "none";
+            } else {
+              confirmPassword.style.borderColor = "#EF4444";
+              passwordMatch.style.display = "none";
+              passwordMismatch.style.display = "block";
+            }
+          } else {
+            confirmPassword.style.borderColor = "var(--border-color)";
+            passwordMatch.style.display = "none";
+            passwordMismatch.style.display = "none";
+          }
+        });
 
-                // Validation
-                if (!email || !passwordVal || passwordVal.length < 6 || passwordVal !== confirmPasswordVal) {
-                    errorMessage.textContent = 'Please fix the form inputs.';
-                    errorMessage.style.display = 'block';
-                    return;
-                }
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
 
-                // Show loading state
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Creating Account...';
-                form.classList.add('loading');
+          const email = document.getElementById("email").value;
+          const passwordVal = password.value;
+          const confirmPasswordVal = confirmPassword.value;
 
-                // Send data to server
-                fetch('/api/signup', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ 
-                        email: email, 
-                        password: passwordVal 
-                    }),
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        successMessage.textContent = 'Account created successfully! You can now login.';
-                        successMessage.style.display = 'block';
-                        form.reset();
-                        // Reset password validation display
-                        passwordMatch.style.display = 'none';
-                        passwordMismatch.style.display = 'none';
-                        confirmPassword.style.borderColor = 'var(--border-color)';
-                        
-                        // Redirect to login page after successful signup
-                        setTimeout(() => {
-                            window.location.href = '/login';
-                        }, 2000);
-                    } else {
-                        errorMessage.textContent = data.message || 'Signup failed. Please try again.';
-                        errorMessage.style.display = 'block';
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    errorMessage.textContent = 'An error occurred. Please try again.';
-                    errorMessage.style.display = 'block';
-                })
-                .finally(() => {
-                    // Reset button state
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Sign Up';
-                    form.classList.remove('loading');
-                });
+          // Reset messages
+          successMessage.style.display = "none";
+          errorMessage.style.display = "none";
+
+          // Validation
+          if (
+            !email ||
+            !passwordVal ||
+            passwordVal.length < 6 ||
+            passwordVal !== confirmPasswordVal
+          ) {
+            errorMessage.textContent = "Please fix the form inputs.";
+            errorMessage.style.display = "block";
+            return;
+          }
+
+          // Show loading state
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Creating Account...";
+          form.classList.add("loading");
+
+          // Send data to server
+          fetch("/api/signup", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              email: email,
+              password: passwordVal,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                successMessage.textContent =
+                  "Account created successfully! You can now login.";
+                successMessage.style.display = "block";
+                form.reset();
+                // Reset password validation display
+                passwordMatch.style.display = "none";
+                passwordMismatch.style.display = "none";
+                confirmPassword.style.borderColor = "var(--border-color)";
+
+                // Redirect to login page after successful signup
+                setTimeout(() => {
+                  window.location.href = "/login";
+                }, 2000);
+              } else {
+                errorMessage.textContent =
+                  data.message || "Signup failed. Please try again.";
+                errorMessage.style.display = "block";
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              errorMessage.textContent = "An error occurred. Please try again.";
+              errorMessage.style.display = "block";
+            })
+            .finally(() => {
+              // Reset button state
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Sign Up";
+              form.classList.remove("loading");
             });
         });
+      });
     </script>
-</body>
+  </body>
 </html>
